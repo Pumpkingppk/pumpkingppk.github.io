@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面不存在 — Pang Yumo</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #faf8f3;
+      --ink: #1f1d19;
+      --muted: #6e6960;
+      --line: #e4ded2;
+      --accent: #94402c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --paper: #14130f;
+        --ink: #eae4d8;
+        --muted: #9b9488;
+        --line: #2e2a24;
+        --accent: #d98a6d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Iowan Old Style", Palatino, Georgia, "Songti SC", serif;
+      text-align: center;
+    }
+    .code {
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 1.25rem;
+    }
+    h1 {
+      font-size: clamp(1.6rem, 5vw, 2.25rem);
+      font-weight: 500;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: var(--muted);
+      max-width: 26rem;
+      line-height: 1.7;
+      margin: 0 auto 2rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.15rem;
+      font-family: system-ui, "PingFang SC", sans-serif;
+      font-size: 0.9rem;
+    }
+    a:hover { border-bottom-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">404</p>
+    <h1>这一页不存在</h1>
+    <p>你要找的地址可能已经改名，或者从来没有存在过。</p>
+    <a href="./">回到首页</a>
+  </main>
+</body>
+</html>

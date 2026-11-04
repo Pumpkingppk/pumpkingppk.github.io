@@ -1,0 +1,8 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# 本地测试残留
+.write-test
