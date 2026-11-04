@@ -96,7 +96,7 @@
 
 | 位置 | 现在的内容 | 改成 |
 |---|---|---|
-| `index.html`、`writings.html`、`notes/*.html` 的 `<h1>`、`.brand` | `Pang Yumo` | 你的名字 |
+| 所有页面的 `.brand`、`<title>`、页脚，以及 `index.html` 的 `<h1>`（现为 `Écoutez&nbsp;!`） | `Pang Yumo` | 你的名字或站点名 |
 | `index.html` 的 hero 段落 | 兴趣描述 | 你自己的介绍 |
 | `index.html`、`writings.html` 的 GitHub 链接 | `https://github.com/your-username` | 你的主页 |
 | `index.html` 的「关于」两段 | 通用文案 | 你的真实介绍 |
