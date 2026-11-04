@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>标题 — Pang Yumo</title>
+  <meta name="description" content="一句话摘要。">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- KaTeX：渲染 $行内公式$ 与 $$独立公式$$ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$',  right: '$',  display: false }
+            ],
+            throwOnError: false
+          });"></script>
+</head>
+<body>
+
+  <header class="masthead wrap">
+    <a class="brand" href="../index.html">Pang Yumo</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html">首页</a>
+      <a href="../writings.html">写作</a>
+      <a href="../index.html#about">关于</a>
+      <button class="theme-toggle" type="button" aria-label="切换主题">☾</button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <article>
+      <header class="note-header">
+        <p class="entry-meta"><span>笔记</span><span>2026</span><span>HTML</span></p>
+        <h1>标题写在这里</h1>
+      </header>
+
+      <div class="note-actions">
+        <!-- 没有 PDF 就删掉这两行 -->
+        <a class="btn" href="../assets/pdfs/文件名.pdf" target="_blank" rel="noopener">阅读 PDF</a>
+        <a class="btn ghost" href="../assets/pdfs/文件名.pdf" download>下载 PDF</a>
+      </div>
+
+      <div class="prose">
+
+        <p>
+          开头一段交代动机：为什么写这篇、它解决什么问题。读者靠这一段决定要不要继续。
+        </p>
+
+        <h2>第一节</h2>
+
+        <p>
+          正文。行内公式这样写：设 $f$ 是紧黎曼曲面 $X$ 上的亚纯函数，
+          则 $f$ 的零点与极点给出一个除子。独立公式这样写：
+        </p>
+
+        $$
+        \deg(\mathrm{div}\, f) = 0, \qquad
+        \ell(D) - \ell(K_X - D) = \deg D + 1 - g.
+        $$
+
+        <p>
+          这就是 Riemann–Roch 定理。继续写下去即可。
+        </p>
+
+        <h2>第二节</h2>
+
+        <p>
+          更多内容。列表、引用、代码都可以直接用 HTML 写。
+        </p>
+
+        <ul>
+          <li>要点一；</li>
+          <li>要点二。</li>
+        </ul>
+
+      </div>
+
+      <a class="backlink" href="../writings.html">← 返回写作列表</a>
+    </article>
+
+  </main>
+
+  <footer class="footer wrap">
+    <span>© <span data-year>2026</span> Pang Yumo</span>
+    <span>本站由 GitHub Pages 托管</span>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
