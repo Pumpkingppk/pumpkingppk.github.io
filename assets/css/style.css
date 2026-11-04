@@ -287,6 +287,44 @@ img { max-width: 100%; height: auto; }
   font-size: 0.9875rem;
 }
 
+/* compact list used on the home page */
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.work-line:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.work-line a {
+  transition: color 160ms ease;
+}
+
+.work-line a:hover {
+  color: var(--accent);
+}
+
+.work-kind {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 /* ---------- 7. note page ---------- */
 .note-header {
   padding: clamp(2.5rem, 6vw, 4.5rem) 0 2rem;

@@ -76,6 +76,20 @@
 
 ---
 
+### 加一篇创作
+
+创作那部分比数学简单，没有独立的阅读页，直接链 PDF：
+
+1. 把 PDF 放进 `assets/pdfs/`，文件名用英文
+2. 打开 `creative.html`，复制一整个 `<li class="entry">…</li>` 块改掉，
+   链接写成 `assets/pdfs/文件名.pdf`
+3. 首页 `index.html` 的「创作」区块里，复制一行 `<li class="work-line">…</li>`
+
+如果某篇想写长一点的介绍，可以照 `notes/riemann-surfaces.html` 单独建一个
+`works/xxx.html`，再改链接指向它。
+
+---
+
 ## 三、要替换的占位内容
 
 发布前把这些找出来改成你自己的（用编辑器全局搜索）：
@@ -132,8 +146,9 @@ git push
 
 ```
 Ecoutez/                        ← 仓库根目录 = 网站根目录
-├── index.html                  首页：自我介绍 + 近期写作
-├── writings.html               全部写作列表
+├── index.html                  首页：自我介绍 + 数学笔记 + 创作
+├── writings.html               数学笔记列表
+├── creative.html               创作列表（剧本 / 小说）
 ├── 404.html                    找不到页面时的提示
 ├── notes/
 │   ├── riemann-surfaces.html   单篇笔记的阅读页（内嵌 PDF）
